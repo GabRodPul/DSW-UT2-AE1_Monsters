@@ -1,5 +1,5 @@
 # Monster Hunter app
-Simple fullstack app that serves as an encyclopedia for large monsters from the Monster Hunter series.
+Simple fullstack app that serves as an encyclopedia of large monsters from the Monster Hunter series.
 
 ## Features
 - Fully functioning CRUD for a single table.
