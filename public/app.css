@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Monster Hunter Type 2";
+    src: url('fonts/MonsterHunterType2.ttf');
+}
+
+:root {
+    /* Fonts */
+    --font-title: "Monster Hunter Type 2";
+
+    /* Colors */
+    --international-klein-blue: #002F9Aff;
+    --moonstone: #5D97A0ff;
+    --dutch-white: #DFD3ACff;
+    --tan: #D2B78Fff;
+    --rosy-brown: #D49684ff;
+
+    --color-titlebar:    var(--international-klein-blue);
+    --color-background1: var(--dutch-white);
+    --color-background2: var(--tan);
+    --color-footer:      var(--rosy-brown);
+}
+
+header {
+    background-color: var(--color-titlebar);
+}
+
+main {
+    background-color: var(--color-background2);
+}
+
+footer {
+    background-color: var(--color-footer);
+}
+
+h1, h2, h3 {
+    font-family: var(--font-title);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 50vh;
+}
+
+.icon {
+    max-width: 20px;
+    max-height: 20px;
+    object-fit: contain;
+}
+
+main {
+    flex: 1;
+}
