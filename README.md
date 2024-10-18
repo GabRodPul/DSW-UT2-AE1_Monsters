@@ -40,6 +40,11 @@ DB_PASSWORD="MY_PASSWORD"
 ...
 ```
 
+Then, run the migrations.
+```
+php artisan migrate
+```
+
 To start the frontend, run Laragon and Start All.
 To run the actual project:
 ```
