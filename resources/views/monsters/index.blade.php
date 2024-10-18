@@ -1,9 +1,13 @@
 @extends('layout')
 
 @section("content")
+    <form class="btn btn-primary" method="GET" action={{ route('monsters.create') }}>
+        <input type="submit" value="Create"></input>
+    </form>
     <h1>Monster list</h1>
-    <ul>
+    <div>
         @foreach ($monsters as $m)
+        <div class="monster-container">
             <h2>{{ $m->name }}</h2>
             {{-- <p>{{ print "edit" }}</p> --}}
             <form class="btn btn-primary" method="GET" action={{ route('monsters.edit', [$m->id]) }}>
@@ -16,8 +20,7 @@
             </form>
             {{-- <a href="{{ route('monsters.edit', $m->id) }}">Edit</a> --}}
             {{-- <a href="{{ route('monsters.destroy', $m->id) }}">Delete</a> --}}
-            <li>
-                <h3>Class: {{ $m->class }}</h3>
+                <h3>Class: <span>{{ $m->class }}</span></h2>
                 <h3>
                     Element:  
                     <img 
@@ -42,7 +45,7 @@
                 </h3>
                 <h3>Info:</h3>
                 <p>{{ $m->info }}</p>
-            </li>
+        </div>
         @endforeach
-    </ul>
+    </div>
 @endsection

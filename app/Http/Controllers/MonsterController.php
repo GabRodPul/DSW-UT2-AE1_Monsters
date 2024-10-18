@@ -44,6 +44,7 @@ class MonsterController extends Controller
         $monster->ailment   = $request->ailment;
         $monster->weakness  = $request->weakness;
         $monster->info      = $request->info;
+        $monster->save();
 
         return redirect()->route("monsters.index");
     }

@@ -7,9 +7,15 @@
     src: url('fonts/MonsterHunterType2.ttf');
 }
 
+@font-face {
+    font-family: "Roboto Condensed";
+    src: url('fonts/RobotoCondensed-VariableFont_wght.ttf');
+}
+
 :root {
     /* Fonts */
     --font-title: "Monster Hunter Type 2";
+    --font-content: "Roboto Condensed";
 
     /* Colors */
     --international-klein-blue: #002F9Aff;
@@ -24,27 +30,54 @@
     --color-footer:      var(--rosy-brown);
 }
 
+body {
+    background-color: var(--color-background2);
+    font-family: var(--font-content);
+}
+
 header {
     background-color: var(--color-titlebar);
 }
 
+header > * {
+    text-align: center;
+}
+
 main {
-    background-color: var(--color-background2);
+    flex: 1;
 }
 
 footer {
     background-color: var(--color-footer);
 }
 
+footer > * {
+    text-align: center;
+}
+
+
 h1, h2, h3 {
     font-family: var(--font-title);
 }
 
+header > h1 {
+    color: var(--dutch-white)
+}
+
+h3 > span {
+    font-family: var(--font-content);
+}
+
+
 .container {
     display: flex;
     flex-direction: column;
+    margin-left: 0;
+}
+
+.container > main {
     min-height: 100vh;
-    max-width: 50vh;
+    max-width: 70vh;
 }
 
 .icon {
@@ -53,6 +86,7 @@ h1, h2, h3 {
     object-fit: contain;
 }
 
-main {
-    flex: 1;
+.monster-container {
+    margin-bottom: 10%;
+    background-color: var(--color-background1);
 }

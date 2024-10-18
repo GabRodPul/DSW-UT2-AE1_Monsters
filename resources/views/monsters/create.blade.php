@@ -10,6 +10,7 @@
                 type="text" 
                 class="form-control" 
                 id="name" 
+                name="name"
                 placeholder="Enter monster name" 
                 required
             >

@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Update an Existing Monster</h1>
-    <form method="post" action="{{ route('monsters.update', $monster->id) }}">
+    <form class="monster-form" method="post" action="{{ route('monsters.update', $monster->id) }}">
         @csrf
         @method('put')
         <div class="form-group">
