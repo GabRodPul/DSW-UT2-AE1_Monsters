@@ -5,7 +5,7 @@
         <input type="submit" value="Create"></input>
     </form>
     <h1>Monster list</h1>
-    <div>
+    <div class="monster-list">
         @foreach ($monsters as $m)
         <div class="monster-container">
             <h2>{{ $m->name }}</h2>
