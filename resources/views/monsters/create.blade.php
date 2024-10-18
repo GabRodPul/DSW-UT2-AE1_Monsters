@@ -2,7 +2,7 @@
 
 @section('content')
     <h1>Create a New Monster</h1>
-    <form method="POST" action="{{ route('monsters.store') }}">
+    <form class="monster-form" method="POST" action="{{ route('monsters.store') }}">
         @csrf
         <div class="form-group">
             <label for="name">Name</label>

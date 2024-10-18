@@ -90,3 +90,18 @@ h3 > span {
     margin-bottom: 10%;
     background-color: var(--color-background1);
 }
+
+.monster-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group > input {
+    max-width: 100%;
+}
